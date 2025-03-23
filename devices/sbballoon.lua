@@ -1,5 +1,3 @@
--- fort wars device file
-
 ConstructEffect = "effects/device_construct.lua"
 CompleteEffect = "effects/device_complete.lua"
 Scale = 1.0

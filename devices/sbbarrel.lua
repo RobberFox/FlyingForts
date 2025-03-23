@@ -18,6 +18,7 @@ StructureSplashDamage = 200
 StructureSplashDamageMaxRadius = 150
 IgnitePlatformOnDestruct = true
 Repairable = true
+ExplodeWhenOutOfWorld = true
 ConstructEffect = "effects/device_construct.lua"
 DestroyEffect = "effects/barrel_explode.lua"
 DestroyUnderwaterEffect = "mods/dlc2/effects/device_explode_submerged.lua"

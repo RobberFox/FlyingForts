@@ -21,8 +21,8 @@ Merge(Device,
 	sbbarrel = L"Control Barrel",
 	sbbarrelTip2 = L"Provides control to independent structures",
 
-	sbiontech = L"Ionospheric Lab",
-	sbiontechTip2 = L"Unlocks Flying Forts weaponry",
+	sbreactor = L"Control Reactor",
+	sbreactorTip2 = L"Like regular Reactor but doesn't increase team's HP",
 
 	sbsandbags = L"Large Sandbags",
 	sbsandbagsTip2 = L"Stronger but costlier sandbags",

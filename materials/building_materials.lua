@@ -1,9 +1,6 @@
 StandardMaxLength = 160
 StandardMaxLinkLength = 220
 
-local portal = FindMaterial("portal")
-local shield = FindMaterial("shield")
-
 local bracingchange = FindMaterial("bracing")
 if bracingchange then
 	bracingchange.bracingchangeScrapTime = 1.0
@@ -25,13 +22,12 @@ local shieldchange = FindMaterial("shield")
 if shieldchange then
 	shieldchange.MaxLength = StandardMaxLength
 	shieldchange.MaxLinkLength = StandardMaxLinkLength
-	shield.HitPoints = 100
+	shieldchange.HitPoints = 100
 end
 
-table.insert(Sprites, DetailSprite("hud-detail-sbcardboard", "sbcardboard", path))
 table.insert(Sprites, ButtonSprite("hud-sbcardboard-icon", "HUD/Materials-cardboard", nil, 0.664, nil, nil, path))
+table.insert(Sprites, DetailSprite("hud-detail-sbcardboard", "HUD-Details-sbcardboard", path))
 table.insert(Materials,
-
 {
 	SaveName = "sbcardboard",
 	Icon = "hud-sbcardboard-icon",
@@ -107,10 +103,9 @@ table.insert(Sprites,
 		},
 	},
 })
-table.insert(Sprites, DetailSprite("hud-detail-sbcardboardbg", "sbcardboardbg", path))
 table.insert(Sprites, ButtonSprite("hud-sbcardboardbg-icon", "HUD/Materials-cardboardbg", nil, 0.664, nil, nil, path))
+table.insert(Sprites, DetailSprite("hud-detail-sbcardboardbg", "HUD-Details-sbcardboardbg", path))
 table.insert(Materials,
-
 {
 	SaveName = "sbcardboardbg",
 	Icon = "hud-sbcardboardbg-icon",
@@ -192,8 +187,8 @@ table.insert(Sprites,
 		},
 	},
 })
-table.insert(Sprites, DetailSprite("hud-detail-sbtarp", "sbtarp", path))
 table.insert(Sprites, ButtonSprite("hud-sbtarp-icon", "HUD/Materials-tarp", nil, 0.664, nil, nil, path))
+table.insert(Sprites, DetailSprite("hud-detail-sbtarp", "HUD-Details-sbtarp", path))
 table.insert(Materials,
 {
 	SaveName = "sbtarp",
