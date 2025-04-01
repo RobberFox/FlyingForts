@@ -11,6 +11,9 @@ for _,name in ipairs(projectile_list) do
 	end
 end
 
+local shotgun = FindProjectile("shotgun")
+shotgun.ExplodeOnTouch = true
+
 table.insert(Projectiles,
 {
 	SaveName = "sbjetair",
