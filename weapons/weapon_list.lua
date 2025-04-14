@@ -105,7 +105,7 @@ table.insert(Weapons, IndexOfWeapon("rocket") + 1,
 
 
 table.insert(Sprites, DetailSprite("hud-detail-sbdowncannonflying", "HUD-Details-sbdowncannonflying", path))
-table.insert(Weapons, IndexOfWeapon("sbhangflak") + 2,
+table.insert(Weapons, IndexOfWeapon("sbhangflak") + 1,
 {
 	Enabled = false,
 	SaveName = "sbhangcannon",
@@ -128,7 +128,7 @@ table.insert(Weapons, IndexOfWeapon("sbhangflak") + 2,
 	MaxSpotterAssistance = 0, -- machinegun doesn't benefit from spotters
 	MaxUpAngle = 30,
 	BuildOnGroundOnly = false,
-	SelectEffect = "ui/hud/weapons/ui_weapons",		
+	SelectEffect = "ui/hud/weapons/ui_weapons",
 })
 
 table.insert(Sprites, ButtonSprite("hud-group-sbthunder", "groups/Group-sbthunder", GroupButtonSpriteBottom, GroupButtonSpriteBottom, nil, nil, path))

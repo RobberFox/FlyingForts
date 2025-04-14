@@ -1,4 +1,4 @@
--- Adding sandbag hit sound to `sbsandbag` --
+-- Adding sandbag hit sound to `sbsandbag`
 local projectile_list = { "machinegun", "minigun", "sniper", "sniper2" }
 for _,name in ipairs(projectile_list) do
 	local projectile = FindProjectile(name)
@@ -10,9 +10,6 @@ for _,name in ipairs(projectile_list) do
 		}
 	end
 end
-
-local shotgun = FindProjectile("shotgun")
-shotgun.ExplodeOnTouch = true
 
 table.insert(Projectiles,
 {
@@ -512,6 +509,11 @@ end
 local cannon = FindProjectile("cannon")
 if cannon then
 	cannon.ProjectileSplashDamage = cannon.ProjectileSplashDamage + 10
+end
+
+local shotgun = FindProjectile("shotgun")
+if shotgun then
+	shotgun.ExplodeOnTouch = true
 end
 
 --flaming versions
